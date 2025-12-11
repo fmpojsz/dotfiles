@@ -40,7 +40,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ```bash
 rm -rf ~/.zshrc
-cd ~/dotfiles && stow zsh git
+cd ~/dotfiles && stow git zsh nvim
 ```
 
 ## Font Configuration
