@@ -1,0 +1,15 @@
+[include]
+    path = ~/.gitconfig.local
+
+[core]
+    excludesfile = ~/dotfiles/.gitignore
+    editor = nvim
+
+[user]
+    name = Andy
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = true
