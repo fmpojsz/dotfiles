@@ -12,6 +12,7 @@ brew "neovim"
 brew "ripgrep"  # Grep replacement
 brew "starship"
 brew "stow"
+brew "tmux"
 brew "zoxide"   # Cd replacement
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"

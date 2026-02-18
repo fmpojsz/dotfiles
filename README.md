@@ -38,9 +38,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ### 4. Link Configs
 
+Remove conflicting configs before linking.
+
 ```bash
-rm -rf ~/.zshrc
-cd ~/dotfiles && stow git zsh nvim
+cd ~/dotfiles && stow git zsh nvim tmux
 ```
 
 ## Font Configuration
