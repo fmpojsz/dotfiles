@@ -41,7 +41,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 Remove conflicting configs before linking.
 
 ```bash
-cd ~/dotfiles && stow git zsh nvim tmux
+cd ~/dotfiles && stow git zsh nvim tmux ghostty starship
 ```
 
 ## Font Configuration
