@@ -23,6 +23,8 @@ cask "font-sarasa-term-tc-nerd-font"
 # [Applications]
 cask "antigravity"
 cask "arc"
+cask "cryptomator"
+cask "fuse-t"
 cask "ghostty"
 cask "obsidian"
 
