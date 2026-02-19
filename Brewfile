@@ -28,5 +28,6 @@ cask "cryptomator"
 cask "fuse-t"
 cask "ghostty"
 cask "obsidian"
+cask "tailscale"
 
 # [VS Code]
