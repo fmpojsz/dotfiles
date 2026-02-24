@@ -27,7 +27,8 @@ cask "arc"
 cask "cryptomator"
 cask "fuse-t"
 cask "ghostty"
+cask "miniforge"
 cask "obsidian"
-cask "tailscale"
+cask "tailscale-app"
 
 # [VS Code]
