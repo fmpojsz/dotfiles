@@ -4,6 +4,7 @@ format = """
 $username\
 $hostname\
 $directory\
+$conda\
 $git_branch\
 $git_state\
 $git_status\
@@ -42,6 +43,11 @@ style = "bright-black"
 [cmd_duration]
 format = "[$duration]($style) "
 style = "yellow"
+
+[conda]
+format = "[$environment]($style) "
+style = "bright-black"
+ignore_base = false
 
 [python]
 format = "[$virtualenv]($style) "
