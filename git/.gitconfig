@@ -1,15 +1,15 @@
-[include]
-    path = ~/.gitconfig.local
-
 [core]
-    excludesfile = ~/dotfiles/.gitignore
     editor = nvim
 
 [user]
     name = Andy
+    email = fmpojsz@gmail.com
 
 [init]
     defaultBranch = main
 
 [pull]
     rebase = true
+
+[includeIf "gitdir:~/work/"]
+    path = ~/.gitconfig.work

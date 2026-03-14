@@ -1,0 +1,70 @@
+# Global gitignore — OS, editors, security only.
+# Language/framework artifacts (node_modules, dist, etc.) belong in project .gitignore.
+
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+.apdisk
+*.icloud
+
+### Vim / Neovim ###
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+# Session
+Session.vim
+Sessionx.vim
+# Undo
+[._]*.un~
+.netrwhist
+
+### VSCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+*.vsix
+
+### Zsh ###
+*.zwc
+*.zwc.old
+*zcompdump*
+.zsh_history
+.zsh_sessions
+
+### Security ###
+# Cloud credentials
+.aws/
+.gcloud/
+.azure/
+.kube/
+.netrc
+# Private keys
+*.pem
+*.key
+id_rsa
+id_ed25519
+# Env files
+.env
+.env.*
+!.env.example
+
+### Claude ###
+**/.claude/settings.local.json
