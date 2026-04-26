@@ -4,6 +4,7 @@
 
 - **Brewfile is the contract.** Any tool used in shell config must be in `Brewfile` or guarded.
 - **Work identity stays out of repo.** Lives in untracked `~/.gitconfig.work`, pulled in via `includeIf`.
+- **Personal shell config stays out of repo.** Lives in untracked `~/.zshrc.local`, sourced from `.zshrc`.
 
 ## Shell startup
 

@@ -7,6 +7,8 @@ if [ -f "/opt/homebrew/bin/brew" ]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+export PATH="$HOME/.local/bin:$PATH"
+
 # ------------------------------------------------------------------------------
 # 2. OMZ
 # ------------------------------------------------------------------------------
@@ -41,15 +43,8 @@ alias ll="ls -lah"
 # ------------------------------------------------------------------------------
 # 5. Shell Extensions
 # ------------------------------------------------------------------------------
-HOMEBREW_PREFIX=$(brew --prefix)
-
-if [ -f "$HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ]; then
-    source "$HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
-fi
-
-if [ -f "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
-    source "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-fi
+source "$HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 # ------------------------------------------------------------------------------
 # 6. Credentials
@@ -59,3 +54,11 @@ export SSH_AUTH_SOCK="$HOME/.bitwarden-ssh-agent.sock"
 # ------------------------------------------------------------------------------
 # 7. SDKs & Languages
 # ------------------------------------------------------------------------------
+[ -d "$HOME/go/bin" ] && export PATH="$PATH:$HOME/go/bin"
+
+ca() { eval "$($HOMEBREW_PREFIX/bin/conda shell.zsh hook)"; }
+
+# ------------------------------------------------------------------------------
+# 8. Local overrides
+# ------------------------------------------------------------------------------
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local
