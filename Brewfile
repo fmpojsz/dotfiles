@@ -7,8 +7,11 @@ brew "fnm"
 brew "fzf"      # Fuzzy finder
 brew "gh"
 brew "git"
+brew "git-crypt"
 brew "jq"
+brew "lazygit"
 brew "neovim"
+brew "rclone"
 brew "ripgrep"  # Grep replacement
 brew "starship"
 brew "stow"
