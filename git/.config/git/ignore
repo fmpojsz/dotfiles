@@ -32,16 +32,6 @@ Sessionx.vim
 [._]*.un~
 .netrwhist
 
-### VSCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/*.code-snippets
-.history/
-*.vsix
-
 ### Zsh ###
 *.zwc
 *.zwc.old
@@ -49,22 +39,12 @@ Sessionx.vim
 .zsh_history
 .zsh_sessions
 
-### Security ###
-# Cloud credentials
-.aws/
-.gcloud/
-.azure/
-.kube/
-.netrc
-# Private keys
-*.pem
-*.key
-id_rsa
-id_ed25519
-# Env files
-.env
-.env.*
-!.env.example
-
 ### Claude ###
 **/.claude/settings.local.json
+
+### Security ###
+.netrc
+id_rsa
+id_ed25519
+.env
+!.env.example
