@@ -2,21 +2,22 @@
 tap "jonz94/sarasa-nerd-fonts"
 
 # [Binaries]
-brew "fd"       # Find replacement
+brew "autocorrect"
+brew "fd"        # Find replacement
 brew "fnm"
-brew "fzf"      # Fuzzy finder
+brew "fzf"       # Fuzzy finder
 brew "gh"
-brew "git"
 brew "git-crypt"
+brew "git"
 brew "jq"
 brew "lazygit"
 brew "neovim"
 brew "rclone"
-brew "ripgrep"  # Grep replacement
+brew "ripgrep"   # Grep replacement
 brew "starship"
 brew "stow"
 brew "tmux"
-brew "zoxide"   # Cd replacement
+brew "zoxide"    # Cd replacement
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 
